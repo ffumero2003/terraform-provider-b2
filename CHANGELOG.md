@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Infrastructure
+* Add regression tests for known defects. Tests for defects that are still present are excluded from `make test` and run with `make test-known-defects` (Go, build tag `knowndefect`) or `python -m pytest python-bindings/tests -m known_defect --runxfail` (Python)
+
 ## [0.15.0] - 2026-11-06
 
 ### Changed
